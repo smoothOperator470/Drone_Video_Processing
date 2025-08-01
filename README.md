@@ -177,12 +177,12 @@ cv2.destroyAllWindows()
 5. Results & Performance
 
 The final model, trained on our augmented V2 dataset, achieved a peak mean Average Precision (mAP50) of 48%. This confirms that the approach is viable and that the model successfully learned to identify key objects from the challenging inclined-angle perspective.
-![Alt text](relative/or/full/path/to/image.png)
+!(Images/confusion_matrix_normalized.png)
 Figure 1: Normalized Confusion Matrix
 
 The confusion matrix below highlights the model's performance on the validation set. The diagonal values represent correct predictions. Off-diagonal values reveal areas for improvement, such as the model sometimes misidentifying 'tree' as 'bush'. This provides clear, actionable guidance for future dataset enhancements.
 
-![Alt text](relative/or/full/path/to/image.png)
+!(Images/train_batch2720.jpg)
 Figure 2: Sample Detections
 
 Example output from the trained YOLOv8n model on test images, demonstrating successful detections of vehicles, people, and vegetation.
