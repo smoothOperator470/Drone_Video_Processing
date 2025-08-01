@@ -14,7 +14,6 @@ A custom YOLOv8 model trained specifically for object detection on drone video c
 - [Project Structure](#project-structure)
 - [Results](#results)
 - [Future Work](#future-work)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Overview
@@ -341,17 +340,6 @@ The trained model successfully detects:
 - **Multi-angle Training**: Expand to various drone angles and altitudes
 - **Advanced Augmentation**: Implement more sophisticated data enhancement
 - **Class Refinement**: Better distinguish between similar object types
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-### Development Guidelines
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Create a Pull Request
 
 ## License
 
