@@ -120,7 +120,7 @@ python train.py
 Perform object detection on video files:
 
 ```bash
-python detect.py
+python detectwithlog.py
 ```
 
 **Output:**
@@ -161,9 +161,9 @@ results = model.train(
 print("Training complete.")
 ```
 
-#### `detect.py` - Detection/Inference Script
+#### `detectwithlog.py` - Detection/Inference Script
 ```python
-# detect.py
+# detectwithlog.py
 # This script uses the trained custom YOLOv8 model to perform object detection on a video file.
 # It saves the output as a new video with bounding boxes and creates a text log of all detections.
 
@@ -293,7 +293,7 @@ names:
 ```
 Drone_Video_Processing/
 ├── train.py                 # Model training script
-├── detect.py                # Detection/inference script
+├── detectwithlog.py                # Detection/inference script
 ├── data.yaml                # Dataset configuration
 ├── dataset/                 # Training dataset
 │   ├── images/
