@@ -44,14 +44,14 @@ Our challenge was detecting objects in drone footage from **intermediate, inclin
 - **Real-time Detection**: Lightweight model suitable for on-device deployment
 - **Comprehensive Logging**: Frame-by-frame detection logs with timestamps
 - **Data Augmentation Pipeline**: Robust dataset enhancement techniques
-- **Video Processing**: Complete workflow from training to inference
+- **Veo Processing**: Complete workflow from training to inference
 
 ## 📊 Dataset
 
 ### Dataset Creation Process
 
 #### Version 1 (Initial Dataset)
-- 250+ manually annotated images extracted from drone video frames
+- 250+ manually annotated images extracted from drone veo frames
 - Manual annotation using Roboflow workspace
 - Semi-automated labeling using trained model as "Roboflow bot"
 - Maintained class balance across all target categories
@@ -67,7 +67,7 @@ Our challenge was detecting objects in drone footage from **intermediate, inclin
 /dataset
 ├── images/
 │   ├── train/          # Training images
-│   └── val/            # Validation images
+│   └── val/            # Valation images
 ├── labels/
 │   ├── train/          # Training labels (YOLO format)
 │   └── val/            # Validation labels (YOLO format)
@@ -86,7 +86,7 @@ Our challenge was detecting objects in drone footage from **intermediate, inclin
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/yourusername/drone-object-detection.git
+git clone https://github.com/smoothOperator/Drone_Video_Processing.git
 cd drone-object-detection
 ```
 
