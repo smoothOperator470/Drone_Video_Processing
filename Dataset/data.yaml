@@ -1,0 +1,13 @@
+train: ../images/train
+val: ../images/valid
+test: ../images/test
+
+nc: 4
+names: ['Bike', 'Building', 'Human', 'Tree']
+
+roboflow:
+  workspace: test-q92o7
+  project: my-first-project-wqo3b
+  version: 6
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/test-q92o7/my-first-project-wqo3b/dataset/6
