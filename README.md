@@ -316,6 +316,15 @@ Created comprehensive dataset with effective augmentation pipeline
 Developed complete end-to-end detection workflow  
 Lightweight model suitable for drone deployment  
 
+![Fig:1](Images/confusion_matrix_normalized.png)
+### Figure 1: 
+Normalized Confusion Matrix. The matrix shows the model's performance on the validation set. Diagonal values represent correct predictions. Off-diagonal values highlight confusion between classes, such as the model sometimes misidentifying 'tree' as 'bush'. This provides clear guidance for future dataset improvements.
+
+![Fig:2](Images/train_batch2720.jpg)
+### Figure 2: 
+Sample Detections. Example output from the trained YOLOv8n model on test images, showing successful detections of vehicles, people, and vegetation from an inclined-angle perspective.
+
+
 ### Sample Detections
 The trained model successfully detects:
 - Vehicles from aerial perspectives
