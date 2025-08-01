@@ -1,8 +1,8 @@
-# Custom Object Detection for Inclined-Angle Drone Footage using YOLOv8 🚀
+# Custom Object Detection for Inclined-Angle Drone Footage using YOLOv8
 
 A custom YOLOv8 model trained specifically for object detection on drone video captured from low, inclined angles. This project addresses the unique challenge of detecting objects from perspectives that standard pre-trained models aren't optimized for.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Problem Statement](#problem-statement)
@@ -17,13 +17,13 @@ A custom YOLOv8 model trained specifically for object detection on drone video c
 - [Contributing](#contributing)
 - [License](#license)
 
-## 🎯 Overview
+## Overview
 
 This project successfully develops a custom object detection solution for drone footage captured from challenging inclined angles. Using YOLOv8n (nano), we created a lightweight model capable of accurately identifying vehicles, people, buildings, trees, and bushes from unique aerial perspectives.
 
 **Key Achievement:** 48% mean Average Precision (mAP50) on validation set with a lightweight, deployable model.
 
-## 🚨 Problem Statement
+## Problem Statement
 
 Standard pre-trained object detection models are typically trained on:
 - Ground-level imagery
@@ -32,13 +32,13 @@ Standard pre-trained object detection models are typically trained on:
 Our challenge was detecting objects in drone footage from **intermediate, inclined angles** - a perspective that existing models handle poorly. This required creating a custom dataset and training a specialized model.
 
 ### Target Classes
-- 🚗 **Vehicle**: Cars, trucks, and other vehicles
-- 👥 **Person**: People in various poses and positions  
-- 🏢 **Building**: Structures and buildings
-- 🌳 **Tree**: Trees and large vegetation
-- 🌿 **Bush**: Bushes and smaller vegetation
+- **Vehicle**: Cars, trucks, and other vehicles
+- **Person**: People in various poses and positions  
+- **Building**: Structures and buildings
+- **Tree**: Trees and large vegetation
+- **Bush**: Bushes and smaller vegetation
 
-## ✨ Features
+## Features
 
 - **Custom YOLOv8n Model**: Optimized for inclined-angle drone footage
 - **Real-time Detection**: Lightweight model suitable for on-device deployment
@@ -46,7 +46,7 @@ Our challenge was detecting objects in drone footage from **intermediate, inclin
 - **Data Augmentation Pipeline**: Robust dataset enhancement techniques
 - **Veo Processing**: Complete workflow from training to inference
 
-## 📊 Dataset
+## Dataset
 
 ### Dataset Creation Process
 
@@ -74,7 +74,7 @@ Our challenge was detecting objects in drone footage from **intermediate, inclin
 └── data.yaml           # Dataset configuration
 ```
 
-## 🛠️ Installation
+## 🛠Installation
 
 ### Prerequisites
 - Python 3.8+
@@ -99,7 +99,7 @@ pip install ultralytics opencv-python
    - Organize images and labels according to the dataset structure above
    - Update `data.yaml` with your dataset paths and class names
 
-## 🚀 Usage
+## Usage
 
 ### Training the Model
 
@@ -159,7 +159,7 @@ results = model.train(
    workers=4                # The number of worker threads for loading data. Speeds up data preprocessing.
 )
 
-print("✅ Training complete.")
+print("Training complete.")
 ```
 
 #### `detect.py` - Detection/Inference Script
@@ -194,7 +194,7 @@ out = cv2.VideoWriter("output_video.mp4", cv2.VideoWriter_fourcc(*"mp4v"), fps, 
 # Open a log file in write mode to store detection details.
 log_file = open("detections_log.txt", "w")
 
-print("🎬 Starting detection on video...")
+print("Starting detection on video...")
 
 # --- 2. Main Processing Loop ---
 while True:
@@ -249,7 +249,7 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-print("✅ Detection and logging complete.")
+print("Detection and logging complete.")
 cap.release()
 out.release()
 log_file.close()
@@ -277,7 +277,7 @@ names:
   4: bush       # Bushes and smaller vegetation
 ```
 
-## 📈 Model Performance
+## Model Performance
 
 ### Validation Results
 - **mAP50**: 48% (mean Average Precision at IoU threshold 0.5)
@@ -289,10 +289,10 @@ names:
 - **Areas for Improvement**: Confusion between visually similar classes (tree vs bush)
 - **Recommendation**: Larger models (YOLOv8m/YOLOv8l) for improved accuracy
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-drone-object-detection/
+Drone_Video_Processing/
 ├── train.py                 # Model training script
 ├── detect.py                # Detection/inference script
 ├── data.yaml                # Dataset configuration
@@ -308,14 +308,14 @@ drone-object-detection/
 └── README.md               # This file
 ```
 
-## 🎯 Results
+## Results
 
 ### Key Achievements
-✅ Successfully trained custom model for challenging inclined-angle drone footage  
-✅ Achieved 48% mAP50 on validation set  
-✅ Created comprehensive dataset with effective augmentation pipeline  
-✅ Developed complete end-to-end detection workflow  
-✅ Lightweight model suitable for drone deployment  
+Successfully trained custom model for challenging inclined-angle drone footage  
+Achieved 48% mAP50 on validation set  
+Created comprehensive dataset with effective augmentation pipeline  
+Developed complete end-to-end detection workflow  
+Lightweight model suitable for drone deployment  
 
 ### Sample Detections
 The trained model successfully detects:
@@ -329,7 +329,7 @@ The trained model successfully detects:
 - Some confusion between similar vegetation types (tree/bush)
 - Clear direction for future dataset improvements
 
-## 🔮 Future Work
+## Future Work
 
 ### Immediate Improvements
 - **Larger Models**: Train YOLOv8m or YOLOv8l for higher accuracy
@@ -342,7 +342,7 @@ The trained model successfully detects:
 - **Advanced Augmentation**: Implement more sophisticated data enhancement
 - **Class Refinement**: Better distinguish between similar object types
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
@@ -353,23 +353,13 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 4. Push to the branch (`git push origin feature/improvement`)
 5. Create a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Ultralytics** for the YOLOv8 framework
 - **Roboflow** for annotation tools and dataset management
 - **OpenCV** for video processing capabilities
 
-## 📞 Contact
-
-For questions, suggestions, or collaboration opportunities:
-- **Project Maintainer**: [Your Name]
-- **Email**: [your.email@example.com]
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-
----
-
-**Note**: This project demonstrates a complete workflow for custom object detection on specialized drone footage. The methodology and results provide a solid foundation for developing production-ready aerial detection systems.
